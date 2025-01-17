@@ -10,9 +10,9 @@ sales.downstreamAgents = [authentication, returns, simulatedHuman];
 simulatedHuman.downstreamAgents = [authentication, returns, sales];
 
 const agents = injectTransferTools([
+  sales,
   authentication,
   returns,
-  sales,
   simulatedHuman,
 ]);
 

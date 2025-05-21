@@ -1,19 +1,6 @@
 import { AgentConfig } from "@/app/types";
 
-// Add this interface to properly type the tool parameters
-interface ExtendedToolParameterProperty {
-  type: string;
-  description?: string;
-  enum?: string[];
-  minimum?: number;
-  maximum?: number;
-  items?: {
-    type: string;
-    enum?: string[];
-  };
-}
-
-//@ts-ignore
+//@ts-expect-erro
 const interviewAgent: AgentConfig = {
   name: "interviewAgent",
   publicDescription:

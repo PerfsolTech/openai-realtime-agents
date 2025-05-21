@@ -4,6 +4,8 @@ export interface ToolParameterProperty {
   type: string;
   description?: string;
   enum?: string[];
+  minimum?: number;
+  maximum?: number;
   pattern?: string;
   properties?: Record<string, ToolParameterProperty>;
   required?: string[];
